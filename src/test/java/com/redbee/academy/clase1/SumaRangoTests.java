@@ -23,7 +23,7 @@ public class SumaRangoTests {
     }
 
     @Test
-    @DisplayName("Test en suma de números pares donde el primer parámetro es mayor al segundo")
+    @DisplayName("Test en suma de números pares")
     void testSumaRangoNumerosPares() {
         Integer resultado = SumaRango.resolverPares(0, 10);
 
@@ -43,7 +43,7 @@ public class SumaRangoTests {
     void testSumaRangoNumerosImpares() {
         Integer resultado = SumaRango.resolverImpares(0, 10);
 
-        Assertions.assertEquals(30, resultado);
+        Assertions.assertEquals(25, resultado);
     }
 
     @Test

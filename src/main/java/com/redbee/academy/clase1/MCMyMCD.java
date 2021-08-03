@@ -1,8 +1,6 @@
 package com.redbee.academy.clase1;
 
 public class MCMyMCD {
-
-
     /**
      * Generar un algoritmo que resuelva el mínimo común múltiplo entre 2 números
      *
@@ -11,8 +9,11 @@ public class MCMyMCD {
      * @return
      */
     public static Integer mcm(int num1, int num2) {
-        // TODO: implementar
-        return null;
+        int a = Math.max(num1, num2);
+        int b = Math.min(num1, num2);
+
+        Integer result = (a * b) / mcd(a, b);
+        return result;
     }
 
     /**
@@ -23,7 +24,10 @@ public class MCMyMCD {
      * @return
      */
     public static Integer mcd(int num1, int num2) {
-        // TODO: implementar
-        return null;
+        if(num2==0) {
+            return num1;
+        } else {
+            return mcd(num2, num1 % num2);
+        }
     }
 }

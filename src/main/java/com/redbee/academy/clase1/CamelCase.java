@@ -18,7 +18,17 @@ public class CamelCase {
      * @return
      */
     public static Integer resolver(String texto) {
-        //TODO: implementar
-        return null;
+        Integer longTexto = texto.length();
+        Integer cantPalabras = 0;
+        if(longTexto == 0){
+            return 0;
+        } else {
+            for (int i = 0; i < longTexto; i++) {
+                if (Character.isUpperCase(texto.charAt(i))) {
+                    cantPalabras++;
+                }
+            }
+            return cantPalabras + 1;
+        }
     }
 }

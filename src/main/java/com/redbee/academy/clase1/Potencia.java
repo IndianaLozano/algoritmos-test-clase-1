@@ -1,5 +1,7 @@
 package com.redbee.academy.clase1;
 
+import com.sun.jdi.IntegerType;
+import java.lang.Math;
 public class Potencia {
 
     /**
@@ -10,7 +12,11 @@ public class Potencia {
      * @return
      */
     public static Integer resolver(Integer base, Integer potencia) {
-        // TODO: implementar
-        return null;
+        if(potencia == 0){
+            return 1;
+        } else {
+            Integer result = (int) Math.pow(base, potencia);
+            return result;
+        }
     }
 }

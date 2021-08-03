@@ -11,7 +11,15 @@ public class MCMyMCDTests {
     void testMcm() {
         Integer resultado = MCMyMCD.mcm(6, 9);
 
-        Assertions.assertEquals(3, resultado);
+        Assertions.assertEquals(18, resultado);
+    }
+
+    @Test
+    @DisplayName("Test mínimo común múltiplo 2")
+    void testMcm2() {
+        Integer resultado = MCMyMCD.mcm(10, 6);
+
+        Assertions.assertEquals(30, resultado);
     }
 
     @Test
